@@ -44,6 +44,15 @@ Le reste du contenu (navigation, problèmes, fonctionnalités, étapes, FAQ, pri
 les données de démonstration des écrans (annonces, prix, propriétaire) sont dans `src/content/demo.ts` et sont
 signalées comme fictives dans le pied de page.
 
+## Charte graphique
+
+La charte graphique (27 planches 1600 × 1000, PDF) est générée depuis `charte/` et publiée avec le site à
+`https://locagab.onrender.com/charte/` (PDF : `/charte/LOCAGAB-charte.pdf`). Sources : `charte/lib.mjs` (couleurs, logos
+depuis le tracé officiel, repère, planche, lockup MÉTHODE AURA), `charte/style.css`, `charte/sections/*.mjs`,
+`charte/build.mjs`. Commandes : `npm run charte` (génération, vérification des planches dans Chrome, export PDF) ou
+les trois étapes séparément (`charte:build`, `charte:check`, `charte:pdf`). Le partenariat MÉTHODE AURA figure en pied
+de chaque planche.
+
 ## Organisation
 
 ```
@@ -51,6 +60,7 @@ index.html                 métadonnées, Open Graph, icônes ; adresses absolue
 render.yaml                Blueprint Render (build, en-têtes, réécriture, SITE_URL)
 DEPLOIEMENT.md             marche à suivre de mise en ligne et vérifications
 public/
+  charte/                  charte graphique générée (index.html, assets, PDF)
   brand/                   logo en SVG : horizontal, vertical, symbole, mot-symbole, versions claire et sombre, icône
   favicon.svg, icon-*.png, apple-touch-icon.png, og-image.png, manifest.json ; robots.txt et sitemap.xml générés au build
 src/
@@ -74,6 +84,8 @@ tools/
   sheet.mjs                planche-contact de captures
   shrink-photos.mjs        ré-encode les photos des écrans à la taille affichée (Chrome, canvas → WebP)
   make-ico.mjs             produit public/favicon.ico à partir des icônes PNG
+  charte-verifier.mjs      contrôle et capture chaque planche de la charte
+  charte-pdf.mjs           export PDF de la charte
   deploy-pages.mjs         construit et pousse le site sur la branche gh-pages (GitHub Pages)
   pages-workflow.yml       modèle de workflow GitHub Actions pour publier à chaque push
 PRODUCT.md                 vérité produit issue du brief
