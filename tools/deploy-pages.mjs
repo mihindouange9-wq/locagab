@@ -19,7 +19,7 @@ const run = (cmd, cwd = root) => execSync(cmd, { cwd, stdio: "inherit", env });
 const out = (cmd, cwd = root) => execSync(cmd, { cwd, encoding: "utf8", env }).trim();
 
 const commit = out("git rev-parse --short HEAD");
-console.log(`Construction (${commit}) pour ${SITE_URL}${BASE_PATH}`);
+console.log(`Construction (${commit}) pour ${SITE_URL}/`);
 run("npm run build");
 fs.copyFileSync(path.join(dist, "index.html"), path.join(dist, "404.html"));
 fs.writeFileSync(path.join(dist, ".nojekyll"), "");
