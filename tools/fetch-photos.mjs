@@ -11,7 +11,7 @@ const out = path.join(root, "src/assets/photos");
 fs.mkdirSync(out, { recursive: true });
 const UA = { headers: { "User-Agent": "locagab-site-build/1.0" } };
 
-// name, largeur(s) cible(s), source. Les crédits complets sont dans CREDITS.md.
+// name, largeur(s) cible(s), source. Les crédits complets sont dans docs/CREDITS.md.
 const PHOTOS = [
   { name: "salon", widths: [900], url: "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZsMTk2ODk3Mjc5MjItaW1hZ2Uta3liZW5oaDQuanBn.jpg" },
   { name: "sejour", widths: [900], url: "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHUyMzM1NDY2LWltYWdlLWt3dnk3Y2M2LmpwZw.jpg" },

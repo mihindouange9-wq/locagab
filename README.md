@@ -19,7 +19,7 @@ npm run preview    # sert dist/ sur http://127.0.0.1:5181
 Site en ligne : **https://locagab.onrender.com** (Render redéploie à chaque push sur `main`). Le site est prévu pour Render (site statique) : `render.yaml` décrit le build, le dossier publié, la réécriture
 d'adresses, les en-têtes de cache et de sécurité et la variable `SITE_URL` (adresse publique utilisée par la balise
 canonical, Open Graph, `robots.txt`, `sitemap.xml` et les données structurées). La marche à suivre complète est dans
-`DEPLOIEMENT.md`.
+`docs/DEPLOIEMENT.md`.
 
 Stack : Vite 6 · React 19 · TypeScript · CSS moderne (variables, grilles, container de section) · GSAP 3
 (ScrollTrigger, SplitText) · Lucide · Manrope auto-hébergée (`@fontsource-variable/manrope`).
@@ -71,7 +71,6 @@ fichier). Sorties ignorées par Git : `video/LOCAGAB-30s.mp4`, affiche et planch
 ```
 index.html                 métadonnées, Open Graph, icônes ; adresses absolues et JSON-LD injectés par vite.config.ts
 render.yaml                Blueprint Render (build, en-têtes, réécriture, SITE_URL)
-DEPLOIEMENT.md             marche à suivre de mise en ligne et vérifications
 public/
   charte/                  charte graphique générée (index.html, assets, PDF)
   brand/                   logo en SVG : horizontal, vertical, symbole, mot-symbole, versions claire et sombre, icône
@@ -87,7 +86,7 @@ src/
     BrandIcon.tsx          pictogrammes des plateformes
   sections/                un composant + une feuille CSS par section
   content/                 textes du site (site.ts) et données de démonstration (demo.ts)
-  assets/photos/           photographies WebP (voir CREDITS.md)
+  assets/photos/           photographies WebP (voir docs/CREDITS.md)
 tools/
   build-brand.mjs          régénère toutes les déclinaisons du logo depuis logo-trace.json
   trace-logo.cjs           vectorisation du logo PNG d'origine (potrace)
@@ -99,14 +98,17 @@ tools/
   make-ico.mjs             produit public/favicon.ico à partir des icônes PNG
   charte-verifier.mjs      contrôle et capture chaque planche de la charte
   charte-pdf.mjs           export PDF de la charte
-PRODUCT.md                 vérité produit issue du brief
-DESIGN.md                  système visuel documenté depuis le build
-CREDITS.md                 crédits photographiques et licences
+docs/
+  PRODUCT.md               vérité produit issue du brief
+  DESIGN.md                système visuel documenté depuis le build
+  CREDITS.md               crédits photographiques et licences
+  DEPLOIEMENT.md           marche à suivre de mise en ligne et vérifications
+  logo.png                 logo d'origine fourni par le client
 ```
 
 ## Logo
 
-`logo.png` est le fichier fourni par le client. Il a été vectorisé (`tools/trace-logo.cjs`) pour obtenir des SVG nets à
+`docs/logo.png` est le fichier fourni par le client. Il a été vectorisé (`tools/trace-logo.cjs`) pour obtenir des SVG nets à
 toutes les tailles ; `tools/build-brand.mjs` produit les déclinaisons dans `public/brand/` et les tracés du composant
 React. Le logo n'est jamais déformé ni recoloré en dehors des deux versions prévues (vert profond sur fond clair, ivoire
 sur fond sombre ; le repère reste vert LOCAGAB).
