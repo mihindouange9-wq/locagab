@@ -13,7 +13,7 @@ sécurité, variables d'environnement.
 
 ## 1. Dépôt Git
 
-Dépôt public : https://github.com/mihindouange9-wq/locagab (branche `main`). Le dépôt local y est rattaché (`origin`) :
+Dépôt privé : https://github.com/mihindouange9-wq/locagab (branche `main`, accessible à Render via l'autorisation GitHub du compte). Le dépôt local y est rattaché (`origin`) :
 modifier, commiter, `git push`.
 
 ## 2. Service Render
