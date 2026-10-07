@@ -53,7 +53,7 @@ render.yaml                Blueprint Render (build, en-têtes, réécriture, SIT
 DEPLOIEMENT.md             marche à suivre de mise en ligne et vérifications
 public/
   brand/                   logo en SVG : horizontal, vertical, symbole, mot-symbole, versions claire et sombre, icône
-  favicon.svg, icon-*.png, apple-touch-icon.png, og-image.png, site.webmanifest, robots.txt
+  favicon.svg, icon-*.png, apple-touch-icon.png, og-image.png, manifest.json ; robots.txt et sitemap.xml générés au build
 src/
   main.tsx, App.tsx        montage, ordre des sections, révélations au défilement
   styles/global.css        jetons de la charte, base, boutons, étiquettes, repère

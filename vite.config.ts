@@ -99,5 +99,6 @@ const BASE_PATH = process.env.BASE_PATH || "/";
 export default defineConfig({
   base: BASE_PATH,
   plugins: [react(), seo()],
-  build: { target: "es2022", cssMinify: "esbuild" },
+  // Aucun fichier incorporé en data: (la politique de sécurité du contenu n autorise que le domaine du site)
+  build: { target: "es2022", cssMinify: "esbuild", assetsInlineLimit: 0 },
 });
