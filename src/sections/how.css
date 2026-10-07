@@ -1,0 +1,183 @@
+.how__head {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.how__device,
+.how__progress {
+  display: none;
+}
+
+.how__list {
+  display: grid;
+  gap: 3.5rem;
+}
+
+.step {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.step__text {
+  display: grid;
+  gap: 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--forest);
+}
+
+/* le numéro porte l'ordre du parcours : il est l'information, pas un décor */
+.step__n {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--green-ink);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+}
+
+.step__text h3 {
+  font-size: clamp(1.75rem, 1.3rem + 2vw, 2.75rem);
+  font-weight: 680;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.step__text p {
+  max-width: 26rem;
+  color: var(--fg-muted);
+  font-size: var(--fs-lead);
+  line-height: 1.45;
+}
+
+/* aperçu mobile : le haut de l'écran, fondu vers le bas */
+.step__peek {
+  display: grid;
+  justify-content: center;
+  height: 21rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(#000 72%, transparent);
+  mask-image: linear-gradient(#000 72%, transparent);
+}
+
+.step__peek .phone {
+  --z: 0.9;
+}
+
+@media (min-width: 960px) {
+  .how__head {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: end;
+    gap: 4rem;
+  }
+
+  .how__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(3rem, 7vw, 7rem);
+  }
+
+  .how__device {
+    position: sticky;
+    top: calc(50vh - 310px + 2.25rem);
+    display: grid;
+    align-self: start;
+    justify-content: center;
+    padding-block: 1rem 3rem;
+  }
+
+  .how__steps {
+    position: relative;
+    padding-left: 3.5rem;
+  }
+
+  .how__list {
+    gap: 0;
+  }
+
+  /* filet de progression le long des étapes */
+  .how__progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 1px;
+    background: var(--rule);
+  }
+
+  .how__progress i {
+    position: absolute;
+    inset: 0;
+    width: 2px;
+    margin-left: -0.5px;
+    background: var(--green);
+    transform-origin: top center;
+  }
+
+  /* L'étape en cours se distingue par la couleur, pas par un voile : le texte des autres étapes
+     reste lisible (gris tempéré, 5,9:1 sur ivoire ; titre 4,2:1 à 44 px). */
+  .step {
+    --step-ink: var(--fg-muted);
+    --step-title: #6b7a76;
+    align-content: center;
+    min-height: 26rem;
+  }
+
+  .step__n,
+  .step__text h3,
+  .step__text p {
+    transition: color var(--t-slow) var(--ease);
+  }
+
+  .step .step__n {
+    color: var(--step-ink);
+  }
+
+  .step .step__n .ring {
+    opacity: 0.45;
+    transition: opacity var(--t-slow) var(--ease);
+  }
+
+  .step .step__text h3 {
+    color: var(--step-title);
+  }
+
+  .step .step__text p {
+    color: var(--step-ink);
+  }
+
+  .step.is-active {
+    --step-ink: var(--fg);
+    --step-title: var(--fg-strong);
+  }
+
+  .step.is-active .step__n {
+    color: var(--green-ink);
+  }
+
+  .step.is-active .step__n .ring {
+    opacity: 1;
+  }
+
+  .step__text {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .step__peek {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) and (max-height: 760px) {
+  .how__device .phone {
+    --z: 0.82;
+  }
+
+  .how__device {
+    top: 5.5rem;
+  }
+}

@@ -1,0 +1,172 @@
+.solution__head {
+  display: grid;
+  justify-items: center;
+  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+  text-align: center;
+}
+
+.solution__head h2 {
+  max-width: 21ch;
+}
+
+/* Mobile : onglets défilants, appareil, texte de la fonctionnalité choisie */
+.solution__stage {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.solution__col {
+  display: contents;
+}
+
+.solution__stage {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 0.5rem;
+}
+
+.solution__phone {
+  grid-column: 1 / -1;
+  grid-row: 3;
+}
+
+.solution__phone .phone {
+  --z: 0.9;
+}
+
+.feature {
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 0.25rem;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background: none;
+  color: var(--muted);
+  text-align: center;
+  transition:
+    background-color var(--t-mid) var(--ease),
+    color var(--t-mid) var(--ease);
+}
+
+.feature__icon {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  color: var(--forest);
+  transition:
+    background-color var(--t-mid) var(--ease),
+    border-color var(--t-mid) var(--ease),
+    color var(--t-mid) var(--ease);
+}
+
+.feature__text {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.feature strong {
+  color: var(--forest);
+  font-size: 0.8125rem;
+  font-weight: 680;
+  line-height: 1.25;
+}
+
+.feature__text > span {
+  display: none;
+}
+
+.feature.is-active {
+  background: var(--ivory);
+}
+
+.feature.is-active .feature__icon {
+  border-color: var(--green);
+  background: var(--green);
+  color: var(--on-green);
+}
+
+.solution__current {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 24rem;
+  min-height: 5.5rem;
+  margin: 2rem auto 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+.solution__current strong {
+  color: var(--forest);
+  font-size: 1.125rem;
+  font-weight: 680;
+}
+
+/* Ordinateur : trois fonctionnalités de part et d'autre de l'appareil */
+@media (min-width: 960px) {
+  .solution__stage {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    column-gap: clamp(2rem, 5vw, 5rem);
+  }
+
+  .solution__col {
+    display: grid;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .solution__phone {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .solution__phone .phone {
+    --z: 1;
+  }
+
+  .feature {
+    grid-template-columns: auto minmax(0, 1fr);
+    justify-items: start;
+    align-items: start;
+    gap: 1.1rem;
+    padding: 1.4rem 1.5rem;
+    border-radius: var(--radius);
+    text-align: left;
+  }
+
+  .feature:hover {
+    color: var(--charcoal);
+  }
+
+  .feature:hover .feature__icon {
+    border-color: var(--forest);
+  }
+
+  .feature.is-active:hover .feature__icon {
+    border-color: var(--green);
+  }
+
+  .feature strong {
+    font-size: 1.1875rem;
+    letter-spacing: -0.02em;
+  }
+
+  .feature__text > span {
+    display: block;
+    font-size: var(--fs-small);
+    line-height: 1.5;
+  }
+
+  .feature.is-active {
+    color: var(--charcoal);
+  }
+
+  .solution__current {
+    display: none;
+  }
+}

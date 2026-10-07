@@ -1,0 +1,222 @@
+.hero {
+  /* échelles des trois appareils : central (zc), latéraux (zs) ; part des latéraux glissée derrière le central (lap) */
+  --zc: 0.8;
+  --zs: 0.66;
+  --lap: 0.2;
+  --side: calc(300px * var(--zs));
+  --drop: calc(620px * (var(--zc) - var(--zs)) * 0.62);
+  position: relative;
+  padding-block: 7rem 3.5rem;
+  overflow: clip;
+  background: var(--ivory);
+}
+
+.hero__grid {
+  display: grid;
+  gap: 3.5rem;
+}
+
+.hero__copy {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  justify-items: start;
+  gap: 1.5rem;
+}
+
+.hero__title {
+  margin-top: -0.25rem;
+  font-size: clamp(2.75rem, 0.9rem + 4.6vw, 5.25rem);
+}
+
+/* chaque ligne du titre est masquée, puis se pose */
+.hero__line {
+  display: block;
+  padding-bottom: 0.14em;
+  margin-bottom: -0.14em;
+  overflow: clip;
+}
+
+.hero__line > span {
+  display: block;
+}
+
+.hero__line--accent {
+  color: var(--green-display);
+}
+
+.hero__lead {
+  max-width: 30rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.75rem;
+  margin-top: 0.5rem;
+}
+
+/* ── Les trois iPhone, sur un axe ── */
+.hero__stage {
+  position: relative;
+  width: 100%;
+  max-width: calc(300px * var(--zc) + var(--side) * 2 * (1 - var(--lap)));
+  height: calc(620px * var(--zc) + 12px);
+  margin-inline: auto;
+}
+
+.hero__phone {
+  position: absolute;
+  top: var(--drop);
+}
+
+.hero__phone .phone {
+  --z: var(--zs);
+}
+
+/* si la place manque, les appareils latéraux restent au bord et se glissent davantage derrière le central */
+.hero__phone--left {
+  left: max(0px, calc(50% - 150px * var(--zc) - var(--side) * (1 - var(--lap))));
+}
+
+.hero__phone--right {
+  right: max(0px, calc(50% - 150px * var(--zc) - var(--side) * (1 - var(--lap))));
+}
+
+.hero__phone--center {
+  top: 0;
+  left: calc(50% - 150px * var(--zc));
+  z-index: 2;
+}
+
+.hero__phone--center .phone {
+  --z: var(--zc);
+}
+
+/* les anneaux du repère, derrière les appareils */
+.hero__rings {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(124%, 760px);
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  translate: -50% -50%;
+}
+
+.hero__rings::before {
+  content: "";
+  position: absolute;
+  inset: 17%;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+
+.hero__note {
+  display: none;
+}
+
+@media (min-width: 520px) {
+  .hero {
+    --zc: 0.92;
+    --zs: 0.77;
+  }
+
+  .hero__title {
+    font-size: clamp(3.25rem, 8vw, 4.5rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    --zc: 1;
+    --zs: 0.82;
+    padding-block: 8.5rem 5rem;
+  }
+
+  /* l'étiquette surmonte son appareil, reliée par un filet */
+  .hero__note {
+    position: absolute;
+    left: 0.25rem;
+    bottom: calc(100% + 2.1rem);
+    display: inline-flex;
+    color: var(--forest);
+    font-size: 0.6875rem;
+    white-space: nowrap;
+  }
+
+  .hero__note::after {
+    content: "";
+    position: absolute;
+    left: 0.3em;
+    top: calc(100% + 0.4rem);
+    width: 1px;
+    height: 1.7rem;
+    background: var(--line-strong);
+  }
+
+  .hero__phone--right .hero__note {
+    left: auto;
+    right: 0.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    --zc: 0.7;
+    --zs: 0.58;
+    display: grid;
+    align-items: center;
+    min-height: min(100svh, 60rem);
+    padding-block: 7.5rem 4rem;
+  }
+
+  .hero__title {
+    font-size: clamp(2.75rem, 0.9rem + 4.6vw, 5.25rem);
+  }
+
+  .hero__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hero__stage {
+    margin-right: 0;
+  }
+
+  .hero__note {
+    display: none;
+  }
+}
+
+@media (min-width: 1160px) {
+  .hero {
+    --zc: 0.82;
+    --zs: 0.68;
+  }
+
+  .hero__note {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    --zc: 0.94;
+    --zs: 0.78;
+  }
+
+  .hero__grid {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    --zc: 1;
+    --zs: 0.83;
+  }
+}

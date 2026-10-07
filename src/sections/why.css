@@ -1,0 +1,59 @@
+.why__title {
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.why__list {
+  border-top: 1px solid var(--forest);
+}
+
+.why__row {
+  display: grid;
+  gap: 0.75rem;
+  padding-block: clamp(1.5rem, 3vw, 2.5rem);
+  border-bottom: 1px solid var(--rule);
+}
+
+/* les trois principes, composés en très grand */
+.why__word {
+  color: var(--forest);
+  font-size: clamp(3rem, 1.2rem + 9vw, 8.5rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  transition:
+    color var(--t-mid) var(--ease),
+    transform var(--t-slow) var(--ease);
+}
+
+.why__text {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7em;
+  max-width: 24rem;
+  color: var(--fg-muted);
+  font-size: var(--fs-lead);
+  line-height: 1.45;
+}
+
+.why__text .ring {
+  translate: 0 0.05em;
+}
+
+@media (min-width: 900px) {
+  .why__row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 22rem);
+    align-items: end;
+    gap: 3rem;
+  }
+
+  .why__text {
+    padding-bottom: 0.9rem;
+  }
+}
+
+@media (hover: hover) {
+  .why__row:hover .why__word {
+    color: var(--green-display);
+    transform: translateX(0.12em);
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T00:00:00Z",
+  "title": "Design System: LOCAGAB",
+  "extensions": {
+    "colorMeta": {
+      "forest": { "role": "primary", "displayName": "Vert profond", "canonical": "#073b32", "tonalRamp": ["#031a16", "#052c26", "#073b32", "#0f4a40", "#2a6a5e", "#5a9a8c", "#a9c4bc", "#e3ece9"] },
+      "forest-deep": { "role": "primary", "displayName": "Vert profond sombre", "canonical": "#052c26", "tonalRamp": ["#02110e", "#031a16", "#052c26", "#073b32", "#0f4a40", "#2a6a5e", "#5a9a8c", "#a9c4bc"] },
+      "forest-soft": { "role": "primary", "displayName": "Vert profond doux", "canonical": "#0f4a40", "tonalRamp": ["#031a16", "#052c26", "#073b32", "#0f4a40", "#1d5d51", "#3c7d70", "#7aa99e", "#c9dcd7"] },
+      "green": { "role": "primary", "displayName": "Vert LOCAGAB", "canonical": "#18a957", "tonalRamp": ["#04241e", "#0a6a34", "#0c7f3f", "#12964b", "#18a957", "#1dbb62", "#3fcb7d", "#e6f4ec"] },
+      "green-hover": { "role": "primary", "displayName": "Vert LOCAGAB survol", "canonical": "#1dbb62", "tonalRamp": ["#04241e", "#0a6a34", "#0c7f3f", "#12964b", "#18a957", "#1dbb62", "#3fcb7d", "#e6f4ec"] },
+      "green-ink": { "role": "primary", "displayName": "Vert encre (texte sur clair, 4,6:1)", "canonical": "#0c7f3f", "tonalRamp": ["#04241e", "#0a6a34", "#0c7f3f", "#12964b", "#18a957", "#1dbb62", "#3fcb7d", "#e6f4ec"] },
+      "green-display": { "role": "primary", "displayName": "Vert d'affichage (grands titres sur clair, 3,5:1)", "canonical": "#12964b", "tonalRamp": ["#04241e", "#0a6a34", "#0c7f3f", "#12964b", "#18a957", "#1dbb62", "#3fcb7d", "#e6f4ec"] },
+      "green-light": { "role": "primary", "displayName": "Vert clair (texte sur vert profond, 6:1)", "canonical": "#3fcb7d", "tonalRamp": ["#04241e", "#0a6a34", "#0c7f3f", "#12964b", "#18a957", "#1dbb62", "#3fcb7d", "#e6f4ec"] },
+      "on-green": { "role": "primary", "displayName": "Encre sur vert", "canonical": "#04241e", "tonalRamp": ["#04241e", "#0a6a34", "#0c7f3f", "#12964b", "#18a957", "#1dbb62", "#3fcb7d", "#e6f4ec"] },
+      "ivory": { "role": "neutral", "displayName": "Ivoire chaud", "canonical": "#f7f5ef", "tonalRamp": ["#17211f", "#3a3f3a", "#55625e", "#8a9591", "#c9c6bc", "#e6e2d7", "#efebe1", "#f7f5ef"] },
+      "sand": { "role": "neutral", "displayName": "Sable", "canonical": "#efebe1", "tonalRamp": ["#17211f", "#3a3f3a", "#55625e", "#8a9591", "#c9c6bc", "#e6e2d7", "#efebe1", "#f7f5ef"] },
+      "white": { "role": "neutral", "displayName": "Blanc (surface de l'application)", "canonical": "#ffffff", "tonalRamp": ["#17211f", "#3a3f3a", "#55625e", "#8a9591", "#c9c6bc", "#e6e2d7", "#f7f5ef", "#ffffff"] },
+      "charcoal": { "role": "neutral", "displayName": "Charbon", "canonical": "#17211f", "tonalRamp": ["#0b0f0e", "#17211f", "#2c3734", "#55625e", "#8a9591", "#a9c4bc", "#d9e8e3", "#f7f5ef"] },
+      "muted": { "role": "neutral", "displayName": "Gris vert", "canonical": "#55625e", "tonalRamp": ["#0b0f0e", "#17211f", "#2c3734", "#55625e", "#8a9591", "#a9c4bc", "#d9e8e3", "#f7f5ef"] },
+      "muted-on-forest": { "role": "neutral", "displayName": "Gris vert sur vert profond", "canonical": "#a9c4bc", "tonalRamp": ["#0b0f0e", "#17211f", "#2c3734", "#55625e", "#8a9591", "#a9c4bc", "#d9e8e3", "#f7f5ef"] },
+      "line": { "role": "neutral", "displayName": "Filet (vert profond 14 %)", "canonical": "rgb(7 59 50 / 0.14)", "tonalRamp": ["rgb(7 59 50 / 1)", "rgb(7 59 50 / 0.72)", "rgb(7 59 50 / 0.56)", "rgb(7 59 50 / 0.42)", "rgb(7 59 50 / 0.28)", "rgb(7 59 50 / 0.14)", "rgb(7 59 50 / 0.1)", "rgb(7 59 50 / 0.05)"] },
+      "line-strong": { "role": "neutral", "displayName": "Filet fort (vert profond 28 %)", "canonical": "rgb(7 59 50 / 0.28)", "tonalRamp": ["rgb(7 59 50 / 1)", "rgb(7 59 50 / 0.72)", "rgb(7 59 50 / 0.56)", "rgb(7 59 50 / 0.42)", "rgb(7 59 50 / 0.28)", "rgb(7 59 50 / 0.14)", "rgb(7 59 50 / 0.1)", "rgb(7 59 50 / 0.05)"] },
+      "line-on-forest": { "role": "neutral", "displayName": "Filet sur vert profond (ivoire 16 %)", "canonical": "rgb(247 245 239 / 0.16)", "tonalRamp": ["rgb(247 245 239 / 0.05)", "rgb(247 245 239 / 0.1)", "rgb(247 245 239 / 0.16)", "rgb(247 245 239 / 0.32)", "rgb(247 245 239 / 0.5)", "rgb(247 245 239 / 0.7)", "rgb(247 245 239 / 0.85)", "rgb(247 245 239 / 1)"] },
+      "line-on-forest-strong": { "role": "neutral", "displayName": "Filet fort sur vert profond (ivoire 32 %)", "canonical": "rgb(247 245 239 / 0.32)", "tonalRamp": ["rgb(247 245 239 / 0.05)", "rgb(247 245 239 / 0.1)", "rgb(247 245 239 / 0.16)", "rgb(247 245 239 / 0.32)", "rgb(247 245 239 / 0.5)", "rgb(247 245 239 / 0.7)", "rgb(247 245 239 / 0.85)", "rgb(247 245 239 / 1)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Le H1 du hero, trois lignes, dernière ligne en vert d'affichage." },
+      "headline": { "displayName": "Headline", "purpose": "H2 de section, bornés à 12–21 ch ; la réponse « LOCAGAB centralise tout. »." },
+      "title": { "displayName": "Title", "purpose": "H3, statut « Vérifié » du score ; agrandi pour les titres d'étape." },
+      "lead": { "displayName": "Lead", "purpose": "Chapeau en gris vert sous chaque H2, 34 rem de large maximum." },
+      "body": { "displayName": "Body", "purpose": "Texte courant en 450." },
+      "small": { "displayName": "Small", "purpose": "Navigation, numéros d'étape, texte secondaire des onglets." },
+      "label": { "displayName": "Label", "purpose": "Statuts et métadonnées uniquement, capitales espacées, toujours précédées de l'anneau." },
+      "score": { "displayName": "Score", "purpose": "Le chiffre 95 % du panneau Trust Score, chiffres tabulaires." }
+    },
+    "shadows": [
+      { "name": "device", "value": "inset 0 0 0 1px rgb(255 255 255 / 0.14), inset 0 0 0 3px #0a0e0d, 0 46px 70px -34px rgb(7 59 50 / 0.5), 0 18px 32px -20px rgb(7 59 50 / 0.4)", "purpose": "Corps de l'iPhone, partout sauf en bas de page." },
+      { "name": "device-close", "value": "inset 0 0 0 1px rgb(255 255 255 / 0.2), inset 0 0 0 3px #0a0e0d, 0 -30px 80px -30px rgb(0 0 0 / 0.5)", "purpose": "Téléphone qui sort du bas de la section de téléchargement." },
+      { "name": "app-float", "value": "0 6px 16px -8px rgb(7 59 50 / 0.5)", "purpose": "Bouton rond flottant et champ de recherche flottant dans l'écran de l'application." },
+      { "name": "app-marker", "value": "0 6px 14px -6px rgb(7 59 50 / 0.55)", "purpose": "Marqueur de prix sur la carte ; actif avec halo 0 0 0 6px rgb(24 169 87 / 0.25)." },
+      { "name": "app-sheet", "value": "0 14px 30px -14px rgb(7 59 50 / 0.55)", "purpose": "Feuille de résultat en bas de la carte." },
+      { "name": "availability-dot", "value": "0 0 0 2.5px rgb(24 169 87 / 0.22)", "purpose": "Halo du point vert de disponibilité." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Sortie douce par défaut pour transitions d'état, soulignements, icônes." },
+      { "name": "ease-inout", "value": "cubic-bezier(0.65, 0, 0.35, 1)", "purpose": "Aller-retour symétrique, déclaré pour les mouvements à deux sens." },
+      { "name": "t-fast", "value": "180ms", "purpose": "Couleurs de bouton, lien d'évitement, pression." },
+      { "name": "t-mid", "value": "420ms", "purpose": "Header, point de navigation, onglets, FAQ, soulignement du lien fléché, icônes de bouton." },
+      { "name": "t-slow", "value": "800ms", "purpose": "Opacité des étapes inactives, glissement des principes." },
+      { "name": "gsap-default", "value": "power3.out, 1.1s", "purpose": "Révélations de blocs (autoAlpha 0→1, y 26→0, stagger 0.08)." },
+      { "name": "gsap-title", "value": "power4.out, 1.2s, stagger 0.09", "purpose": "Lignes de titre masquées (yPercent 108→0), une fois à 88 % de l'écran." },
+      { "name": "screen-layer", "value": "opacity 480ms ease 120ms (in) / 380ms (out)", "purpose": "Changement d'écran dans le téléphone." },
+      { "name": "app-row", "value": "steps(1, end) 90ms, retard 60ms par rangée", "purpose": "Les rangées de l'écran entrant se posent une à une, sans glissement." },
+      { "name": "score-assembly", "value": "power2.out, 0.5s par vérification, départ à 72 % de l'écran", "purpose": "Le Trust Score s'assemble : ligne, sceau, coche, segment, compteur +19." },
+      { "name": "reduced-motion", "value": "animation-duration: 0.01ms; transition-duration: 0.01ms; GSAP désactivé", "purpose": "Tout mouvement est coupé en prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "cta-more", "value": "480px" },
+      { "name": "hero-md", "value": "520px" },
+      { "name": "cols-sm", "value": "620px" },
+      { "name": "hero-lg", "value": "768px" },
+      { "name": "two-col", "value": "900px" },
+      { "name": "two-col-wide", "value": "960px" },
+      { "name": "hero-split", "value": "1024px" },
+      { "name": "nav-inline", "value": "1100px" },
+      { "name": "hero-notes", "value": "1160px" },
+      { "name": "hero-xl", "value": "1280px" },
+      { "name": "hero-full", "value": "1400px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Bouton principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "L'action principale : pilule vert LOCAGAB, texte encre sur vert ; un seul par section.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Télécharger l'application</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.6em; min-height: 3.25rem; padding: 0 1.6rem; border: 1px solid transparent; border-radius: 999px; background: var(--green, #18a957); color: var(--on-green, #04241e); font-family: 'Manrope Variable', Manrope, system-ui, sans-serif; font-size: 1rem; font-weight: 680; letter-spacing: -0.01em; line-height: 1; text-decoration: none; white-space: nowrap; transition: background-color 180ms linear, transform 180ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn:hover { background: var(--green-hover, #1dbb62); } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--green-ink, #0c7f3f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Bouton fantôme",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Action secondaire : contour vert profond à 28 %, qui se renforce au survol.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Découvrir LOCAGAB</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 0.6em; min-height: 3.25rem; padding: 0 1.6rem; border: 1px solid var(--line-strong, rgb(7 59 50 / 0.28)); border-radius: 999px; background: transparent; color: var(--forest, #073b32); font-family: 'Manrope Variable', Manrope, system-ui, sans-serif; font-size: 1rem; font-weight: 680; letter-spacing: -0.01em; line-height: 1; text-decoration: none; white-space: nowrap; transition: border-color 180ms linear, transform 180ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-ghost:hover { border-color: var(--forest, #073b32); } .ds-btn-ghost:active { transform: scale(0.98); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--green-ink, #0c7f3f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Lien fléché",
+      "kind": "button",
+      "refersTo": "link-arrow",
+      "description": "Lien d'action discret : soulignement de 1 px qui se retire au survol, flèche qui descend.",
+      "html": "<a class=\"ds-link-arrow\" href=\"#\"><span>Découvrir LOCAGAB</span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14\"/><path d=\"m19 12-7 7-7-7\"/></svg></a>",
+      "css": ".ds-link-arrow { display: inline-flex; align-items: center; gap: 0.5em; min-height: 2.75rem; color: var(--forest, #073b32); font-family: 'Manrope Variable', Manrope, system-ui, sans-serif; font-size: 1.0625rem; font-weight: 680; text-decoration: none; } .ds-link-arrow span { background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: 0.15em; transition: background-size 420ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-link-arrow:hover span { background-size: 0 1px; background-position: 100% 100%; } .ds-link-arrow svg { width: 1.1em; height: 1.1em; transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-link-arrow:hover svg { transform: translateY(3px); } .ds-link-arrow:focus-visible { outline: 2px solid var(--green-ink, #0c7f3f); outline-offset: 3px; border-radius: 6px; }"
+    },
+    {
+      "name": "Étiquette de statut avec anneau",
+      "kind": "chip",
+      "refersTo": "label",
+      "description": "Capitales espacées pour un état ou une métadonnée, toujours précédées de l'anneau pris de l'œil du pictogramme.",
+      "html": "<p class=\"ds-label\"><i class=\"ds-ring\"></i>Annonce vérifiée</p>",
+      "css": ".ds-label { display: inline-flex; align-items: center; gap: 0.6em; margin: 0; color: var(--muted, #55625e); font-family: 'Manrope Variable', Manrope, system-ui, sans-serif; font-size: 0.75rem; font-weight: 700; line-height: 1.3; letter-spacing: 0.14em; text-transform: uppercase; } .ds-ring { flex: none; width: 0.72em; height: 0.72em; border: 0.2em solid var(--green, #18a957); border-radius: 50%; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Liens vert profond en 600 ; le point vert se pose sous la rubrique survolée ou courante.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Accueil</a><a href=\"#\" aria-current=\"page\">Fonctionnalités</a><a href=\"#\">Sécurité</a><a href=\"#\">Télécharger</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 2rem; } .ds-nav a { position: relative; padding: 0.75rem 0; color: var(--forest, #073b32); font-family: 'Manrope Variable', Manrope, system-ui, sans-serif; font-size: 0.9375rem; font-weight: 600; text-decoration: none; white-space: nowrap; } .ds-nav a::after { content: ''; position: absolute; left: 50%; bottom: 0.2rem; width: 5px; height: 5px; border-radius: 50%; background: var(--green, #18a957); opacity: 0; transform: translate(-50%, 4px); transition: opacity 420ms cubic-bezier(0.22, 1, 0.36, 1), transform 420ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-nav a:hover::after, .ds-nav a[aria-current]::after { opacity: 1; transform: translate(-50%, 0); } .ds-nav a:focus-visible { outline: 2px solid var(--green-ink, #0c7f3f); outline-offset: 3px; border-radius: 6px; }"
+    },
+    {
+      "name": "Bouton de store",
+      "kind": "button",
+      "refersTo": "store-button",
+      "description": "Pilule ivoire sur vert profond, deux lignes ; la variante « Bientôt » reste un contour et n'est pas un lien.",
+      "html": "<div class=\"ds-stores\"><a class=\"ds-store\" href=\"#\"><svg class=\"ds-store__icon\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.8 1.3 10.3.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.2zM13.9 5c.7-.8 1.2-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z\"/></svg><span class=\"ds-store__text\"><small>Télécharger sur</small><strong>App Store</strong></span></a><span class=\"ds-store ds-store--soon\"><svg class=\"ds-store__icon\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M3.6 2.3 13.9 12 3.6 21.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1zm1.3-.6 11.5 6.6-2.9 2.8L5 1.7zm11.5 14 2.9 2.8-11.5 6.6 8.6-9.4zm4.3-4.5c.6.4 1 .8 1 1.3 0 .4-.3.9-1 1.3l-3.1 1.7-3-3 3-3 3.1 1.7z\"/></svg><span class=\"ds-store__text\"><small>Bientôt sur</small><strong>Google Play</strong></span></span></div>",
+      "css": ".ds-stores { display: flex; flex-wrap: wrap; gap: 0.75rem; padding: 1.5rem; background: var(--forest, #073b32); } .ds-store { display: inline-flex; align-items: center; gap: 0.85rem; min-width: 12.25rem; min-height: 3.75rem; padding: 0.5rem 1.5rem 0.5rem 1.25rem; border: 1px solid var(--ivory, #f7f5ef); border-radius: 999px; background: var(--ivory, #f7f5ef); color: var(--forest, #073b32); font-family: 'Manrope Variable', Manrope, system-ui, sans-serif; text-align: left; text-decoration: none; transition: background-color 180ms linear, transform 180ms cubic-bezier(0.22, 1, 0.36, 1); } a.ds-store:hover { background: #ffffff; } a.ds-store:active { transform: scale(0.98); } a.ds-store:focus-visible { outline: 2px solid var(--green-light, #3fcb7d); outline-offset: 3px; } .ds-store__icon { flex: none; width: 1.6rem; height: 1.6rem; } .ds-store__text { display: grid; line-height: 1.15; } .ds-store__text small { font-size: 0.75rem; font-weight: 600; } .ds-store__text strong { font-size: 1.1875rem; font-weight: 720; letter-spacing: -0.02em; } .ds-store--soon { border-color: rgb(247 245 239 / 0.32); background: transparent; color: var(--ivory, #f7f5ef); }"
+    },
+    {
+      "name": "Panneau Trust Score",
+      "kind": "card",
+      "refersTo": "score-panel",
+      "description": "Le dossier vérifié : référence et date, chiffre géant, statut, cinq segments, cinq vérifications scellées.",
+      "html": "<div class=\"ds-score-wrap\"><div class=\"ds-score\"><p class=\"ds-score__name\"><i class=\"ds-ring\"></i>LOCAGAB Trust Score<span class=\"ds-score__ref\">Réf. LBV-2041 · vérifiée le 3 oct. 2026</span></p><p class=\"ds-score__value\"><span class=\"ds-score__number\">95<small>%</small></span><span class=\"ds-score__status\">Vérifié</span></p><div class=\"ds-score__bar\"><i></i><i></i><i></i><i></i><i></i></div><ul class=\"ds-score__list\"><li><span class=\"ds-seal\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M4 8.4l2.6 2.6L12 5.6\"/></svg></span>Identité vérifiée</li><li><span class=\"ds-seal\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M4 8.4l2.6 2.6L12 5.6\"/></svg></span>Téléphone vérifié</li><li><span class=\"ds-seal\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M4 8.4l2.6 2.6L12 5.6\"/></svg></span>Localisation vérifiée</li></ul></div></div>",
+      "css": ".ds-score-wrap { padding: 1.5rem; background: var(--forest, #073b32); font-family: 'Manrope Variable', Manrope, system-ui, sans-serif; } .ds-score { display: grid; gap: 1.75rem; max-width: 30rem; padding: 2rem; border: 1px solid rgb(247 245 239 / 0.16); border-radius: 28px; background: var(--forest-soft, #0f4a40); color: var(--ivory, #f7f5ef); } .ds-score p, .ds-score ul { margin: 0; padding: 0; list-style: none; } .ds-score__name { display: flex; justify-content: space-between; align-items: center; gap: 0.6em; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; } .ds-ring { flex: none; width: 0.72em; height: 0.72em; border: 0.2em solid var(--green, #18a957); border-radius: 50%; } .ds-score__ref { margin-left: auto; color: #a9c4bc; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: 0.04em; text-transform: none; } .ds-score__value { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1.25rem; } .ds-score__number { font-size: 5rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 0.9; letter-spacing: -0.04em; } .ds-score__number small { margin-left: 0.08em; font-size: 0.45em; font-weight: 650; letter-spacing: 0; } .ds-score__status { display: inline-flex; align-items: center; gap: 0.5em; color: var(--green-light, #3fcb7d); font-size: 1.375rem; font-weight: 680; letter-spacing: -0.02em; } .ds-score__status::before { content: ''; width: 1.5rem; height: 1px; background: currentColor; } .ds-score__bar { position: relative; display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; } .ds-score__bar::before { content: ''; position: absolute; inset: 0; border-radius: 6px; background: repeating-linear-gradient(to right, rgb(247 245 239 / 0.16) 0 calc((100% - 24px) / 5), transparent calc((100% - 24px) / 5) calc((100% - 24px) / 5 + 6px)); } .ds-score__bar i { position: relative; height: 6px; border-radius: 6px; background: var(--green, #18a957); } .ds-score__list li { display: flex; align-items: center; gap: 0.9rem; padding: 0.95rem 0; border-top: 1px solid rgb(247 245 239 / 0.16); font-size: 1.0625rem; font-weight: 600; } .ds-seal { display: grid; flex: none; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--green, #18a957); } .ds-seal svg { width: 1rem; height: 1rem; } .ds-seal path { fill: none; stroke: var(--on-green, #04241e); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }"
+    },
+    {
+      "name": "Onglet de fonctionnalité",
+      "kind": "chip",
+      "refersTo": "feature-tab",
+      "description": "Bouton transparent avec icône cerclée ; l'onglet actif prend l'ivoire et son cercle se remplit de vert LOCAGAB.",
+      "html": "<div class=\"ds-features\"><button class=\"ds-feature is-active\" type=\"button\"><span class=\"ds-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg></span><span class=\"ds-feature__text\"><strong>Recherche intelligente</strong><span>Trouvez rapidement selon votre budget, votre quartier et vos critères.</span></span></button><button class=\"ds-feature\" type=\"button\"><span class=\"ds-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg></span><span class=\"ds-feature__text\"><strong>Carte interactive</strong><span>Visualisez les logements autour de vous.</span></span></button></div>",
+      "css": ".ds-features { display: grid; gap: 0.75rem; max-width: 24rem; padding: 1rem; background: #ffffff; font-family: 'Manrope Variable', Manrope, system-ui, sans-serif; } .ds-feature { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: 1.1rem; width: 100%; padding: 1.4rem 1.5rem; border: 1px solid transparent; border-radius: 20px; background: none; color: var(--muted, #55625e); font: inherit; text-align: left; cursor: pointer; transition: background-color 420ms cubic-bezier(0.22, 1, 0.36, 1), color 420ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-feature__icon { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border: 1px solid var(--line-strong, rgb(7 59 50 / 0.28)); border-radius: 50%; color: var(--forest, #073b32); transition: background-color 420ms cubic-bezier(0.22, 1, 0.36, 1), border-color 420ms cubic-bezier(0.22, 1, 0.36, 1), color 420ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-feature__icon svg { width: 20px; height: 20px; } .ds-feature__text { display: grid; gap: 0.35rem; } .ds-feature strong { color: var(--forest, #073b32); font-size: 1.1875rem; font-weight: 680; line-height: 1.25; letter-spacing: -0.02em; } .ds-feature__text > span { font-size: 0.9375rem; line-height: 1.5; } .ds-feature:hover { color: var(--charcoal, #17211f); } .ds-feature:hover .ds-feature__icon { border-color: var(--forest, #073b32); } .ds-feature.is-active { background: var(--ivory, #f7f5ef); color: var(--charcoal, #17211f); } .ds-feature.is-active .ds-feature__icon { border-color: var(--green, #18a957); background: var(--green, #18a957); color: var(--on-green, #04241e); } .ds-feature:focus-visible { outline: 2px solid var(--green-ink, #0c7f3f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Accordéon FAQ",
+      "kind": "custom",
+      "refersTo": "faq-item",
+      "description": "Details natif sur liste à filets ; l'icône plus se remplit de vert et tourne de 45° à l'ouverture.",
+      "html": "<div class=\"ds-faq\"><details class=\"ds-faq__item\" open><summary><h3>LOCAGAB est-il une plateforme de recherche ?</h3><span class=\"ds-faq__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14\"/><path d=\"M5 12h14\"/></svg></span></summary><p>Non. LOCAGAB est une application mobile ; le site la présente et conduit à son téléchargement.</p></details><details class=\"ds-faq__item\"><summary><h3>Que signifie « annonce vérifiée » ?</h3><span class=\"ds-faq__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14\"/><path d=\"M5 12h14\"/></svg></span></summary><p>Identité, téléphone, localisation, bien et disponibilité récente ont été contrôlés.</p></details></div>",
+      "css": ".ds-faq { max-width: 36rem; border-top: 1px solid var(--forest, #073b32); font-family: 'Manrope Variable', Manrope, system-ui, sans-serif; color: var(--charcoal, #17211f); } .ds-faq__item { border-bottom: 1px solid var(--line, rgb(7 59 50 / 0.14)); } .ds-faq__item summary { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.4rem 0; list-style: none; cursor: pointer; } .ds-faq__item summary::-webkit-details-marker { display: none; } .ds-faq__item h3 { margin: 0; color: var(--forest, #073b32); font-size: 1.25rem; font-weight: 660; line-height: 1.3; letter-spacing: -0.02em; } .ds-faq__icon { display: grid; flex: none; place-items: center; width: 2.5rem; height: 2.5rem; border: 1px solid var(--line-strong, rgb(7 59 50 / 0.28)); border-radius: 50%; color: var(--forest, #073b32); transition: background-color 420ms cubic-bezier(0.22, 1, 0.36, 1), border-color 420ms cubic-bezier(0.22, 1, 0.36, 1), rotate 420ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-faq__icon svg { width: 18px; height: 18px; } .ds-faq__item summary:hover .ds-faq__icon { border-color: var(--forest, #073b32); } .ds-faq__item[open] .ds-faq__icon { border-color: var(--green, #18a957); background: var(--green, #18a957); color: var(--on-green, #04241e); rotate: 45deg; } .ds-faq__item p { margin: 0; max-width: 40rem; padding-bottom: 1.6rem; color: var(--muted, #55625e); font-size: 1.0625rem; line-height: 1.6; } .ds-faq__item summary:focus-visible { outline: 2px solid var(--green-ink, #0c7f3f); outline-offset: 3px; border-radius: 6px; }"
+    },
+    {
+      "name": "Étape du parcours",
+      "kind": "custom",
+      "refersTo": "step",
+      "description": "Numéro tabulaire précédé de l'anneau, titre serré, paragraphe gris vert ; sur mobile un filet vert profond ouvre chaque étape.",
+      "html": "<ol class=\"ds-steps\"><li class=\"ds-step\"><span class=\"ds-step__n\"><i class=\"ds-ring\"></i>01</span><h3>Recherchez</h3><p>Indiquez la ville, le quartier et votre budget.</p></li><li class=\"ds-step\"><span class=\"ds-step__n\"><i class=\"ds-ring\"></i>02</span><h3>Comparez</h3><p>Photos, vidéos, carte et statut de disponibilité, côte à côte.</p></li></ol>",
+      "css": ".ds-steps { display: grid; gap: 2.5rem; max-width: 28rem; margin: 0; padding: 0; list-style: none; font-family: 'Manrope Variable', Manrope, system-ui, sans-serif; } .ds-step { display: grid; gap: 0.5rem; padding-top: 1.25rem; border-top: 1px solid var(--forest, #073b32); } .ds-step__n { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--green-ink, #0c7f3f); font-size: 0.9375rem; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: 0.06em; } .ds-ring { flex: none; width: 0.72em; height: 0.72em; border: 0.2em solid var(--green, #18a957); border-radius: 50%; } .ds-step h3 { margin: 0; color: var(--forest, #073b32); font-size: 2.25rem; font-weight: 680; line-height: 1.05; letter-spacing: -0.035em; } .ds-step p { margin: 0; max-width: 26rem; color: var(--muted, #55625e); font-size: 1.1875rem; line-height: 1.45; }"
+    },
+    {
+      "name": "Cadre de téléphone",
+      "kind": "custom",
+      "refersTo": "phone",
+      "description": "iPhone dessiné en CSS (300 × 620), seul porteur d'ombre du site ; l'écran est blanc et reçoit l'application en HTML.",
+      "html": "<div class=\"ds-phone-wrap\"><div class=\"ds-phone\"><div class=\"ds-phone__screen\"><span class=\"ds-phone__island\"></span><div class=\"ds-app\"><div class=\"ds-app__status\">9:41</div><div class=\"ds-app__search\">Libreville, Akanda, Owendo…</div><div class=\"ds-app__chips\"><span class=\"is-active\">Tous</span><span>Appartement</span><span>Maison</span></div><div class=\"ds-app__card\"><div class=\"ds-app__photo\"><span class=\"ds-app__badge\"><i></i>Disponible</span></div><div class=\"ds-app__text\"><strong>Appartement moderne à Libreville</strong><span class=\"ds-app__price\">450 000 FCFA <small>/ mois</small></span><small>2 ch. · 2 sdb · 120 m²</small></div></div></div><span class=\"ds-phone__home\"></span></div></div></div>",
+      "css": ".ds-phone-wrap { padding: 1.5rem; background: var(--ivory, #f7f5ef); } .ds-phone { position: relative; width: 300px; height: 620px; padding: 9px; border-radius: 50px; background: linear-gradient(140deg, #39423f 0%, #121716 22%, #0b0f0e 60%, #2a3230 100%); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.14), inset 0 0 0 3px #0a0e0d, 0 46px 70px -34px rgb(7 59 50 / 0.5), 0 18px 32px -20px rgb(7 59 50 / 0.4); zoom: 0.7; } .ds-phone__screen { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 41px; background: #fff; } .ds-phone__island { position: absolute; top: 10px; left: 50%; width: 82px; height: 24px; border-radius: 14px; background: #06090a; transform: translateX(-50%); } .ds-phone__home { position: absolute; bottom: 7px; left: 50%; width: 96px; height: 4px; border-radius: 4px; background: rgb(23 33 31 / 0.82); transform: translateX(-50%); } .ds-app { display: flex; flex-direction: column; gap: 12px; height: 100%; padding: 0 16px; color: #17211f; font-family: 'Manrope Variable', Manrope, system-ui, sans-serif; font-size: 11px; font-weight: 500; line-height: 1.35; } .ds-app__status { height: 46px; padding: 6px 10px 0; font-size: 12px; font-weight: 700; } .ds-app__search { display: flex; align-items: center; height: 42px; padding: 0 14px; border-radius: 14px; background: #f7f5ef; color: #64716d; font-size: 12px; font-weight: 550; } .ds-app__chips { display: flex; gap: 6px; } .ds-app__chips span { padding: 7px 12px; border: 1px solid rgb(7 59 50 / 0.1); border-radius: 999px; color: #073b32; font-weight: 650; } .ds-app__chips .is-active { border-color: #073b32; background: #073b32; color: #fff; } .ds-app__card { overflow: hidden; border: 1px solid rgb(7 59 50 / 0.1); border-radius: 18px; background: #fff; } .ds-app__photo { position: relative; height: 148px; background: linear-gradient(160deg, #d9e8e3, #a9c4bc); } .ds-app__badge { position: absolute; left: 10px; top: 10px; display: inline-flex; align-items: center; gap: 5px; padding: 4px 8px 4px 6px; border-radius: 999px; background: #f7f5ef; color: #073b32; font-size: 9.5px; font-weight: 720; } .ds-app__badge i { width: 7px; height: 7px; border-radius: 50%; background: #18a957; box-shadow: 0 0 0 2.5px rgb(24 169 87 / 0.22); } .ds-app__text { display: grid; gap: 3px; padding: 11px 13px 13px; } .ds-app__text strong { color: #073b32; font-size: 12.5px; font-weight: 720; } .ds-app__price { color: #073b32; font-size: 13.5px; font-weight: 780; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; } .ds-app__price small { font-size: 10px; font-weight: 550; } .ds-app__text > small { color: #64716d; font-size: 10px; font-weight: 550; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le dossier vérifié",
+    "overview": "Le site est l'endroit où une annonce devient un fait vérifié. Tout ce qui s'y affiche emprunte la grammaire de la preuve : un repère rond, un statut, une référence, une date, un filet. Il refuse la forme par défaut de sa catégorie (une barre de recherche au-dessus d'une grille de cartes) parce que le site n'est pas une plateforme ; c'est le dossier de présentation d'une application, et l'application est montrée telle qu'elle est, en HTML dans des iPhone dessinés en CSS.\n\nLa matière est calme : un fond ivoire chaud, une seule bande de sable pour la rangée des sept écrans, des champs de vert profond qui occupent des sections entières (confiance, téléchargement, pied de page), et le blanc réservé à la surface de l'application elle-même. Le vert LOCAGAB est rare : il n'apparaît que sur les actions et sur la marque de vérification. Les filets en vert profond font office de règles de formulaire ; aucune carte ne flotte. La densité est aérée, une idée par section, une action principale par section.\n\nLe mouvement est lent, exact, sans rebond. Les titres se posent ligne par ligne derrière un masque, les blocs montent de quelques pixels, les écrans changent dans le téléphone en posant leurs rangées une à une (pas de glissement), et le Trust Score s'assemble vérification après vérification pendant que le chiffre monte à 95 %.",
+    "keyCharacteristics": [
+      "Un seul signe pour tout le site : l'anneau, pris de l'œil du pictogramme (point de disponibilité, sceau de vérification, marqueur de carte, marqueur d'étape).",
+      "Trois tons de section (ivoire, blanc, vert profond) plus une bande de sable ; chaque ton redéfinit texte, filet et accent par `data-tone`.",
+      "Manrope seule, graisses variables fines (450 corps, 680 titres, 700 étiquettes), interlettrage serré sur les titres.",
+      "Filets de 1 px en vert profond comme structure ; pas de carte flottante, pas d'ombre décorative hors de l'appareil.",
+      "Chiffres tabulaires pour prix, références, dates et score."
+    ],
+    "rules": [
+      { "name": "The One Green Rule", "body": "Le vert LOCAGAB (`green`) ne se pose que sur une action ou sur une marque de vérification. Le texte vert emprunte `green-ink`, `green-display` ou `green-light` selon le fond et la taille ; un aplat de section n'est jamais vert LOCAGAB.", "section": "colors" },
+      { "name": "The Tone Field Rule", "body": "Un ton de section (`data-tone` ivoire, blanc, sable, vert profond) se change par section entière. Les rôles `--bg`, `--fg`, `--fg-muted`, `--rule`, `--accent-text` suivent ; un composant ne force jamais sa couleur de texte en dur quand un rôle existe.", "section": "colors" },
+      { "name": "The Contrast Ladder Rule", "body": "Trois verts de texte, trois usages : `green-ink` pour le texte courant sur clair, `green-display` à partir de 2 rem sur clair, `green-light` sur vert profond. Pas d'autre vert pour du texte.", "section": "colors" },
+      { "name": "The Status-Only Label Rule", "body": "L'étiquette en capitales espacées nomme un état ou une métadonnée (« Annonce vérifiée », « Carte interactive », le nom d'un écran, le nom du score, les intitulés de colonnes du pied de page). Elle n'introduit pas un H2 de section.", "section": "typography" },
+      { "name": "The Tabular Figures Rule", "body": "Prix, références, dates, numéros d'étape et score sont composés en `font-variant-numeric: tabular-nums`.", "section": "typography" },
+      { "name": "The Balanced Heading Rule", "body": "Les titres portent `text-wrap: balance` et une largeur maximale en `ch` ; les paragraphes portent `text-wrap: pretty`.", "section": "typography" },
+      { "name": "The Device-Only Shadow Rule", "body": "Une ombre portée n'existe que sur le téléphone ou dans son écran. Les surfaces du site (panneau de score, planche propriétaires, cadres photo, onglets) sont posées à plat, délimitées par leur ton ou un filet.", "section": "elevation" },
+      { "name": "The Tinted Shadow Rule", "body": "Toute ombre est teintée en vert profond (`rgb(7 59 50 / α)`), jamais en noir neutre, sauf le halo inversé de l'appareil de clôture.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do réserver le vert LOCAGAB aux actions et aux marques de vérification ; prendre `green-ink`, `green-display` ou `green-light` pour tout texte vert selon le fond et la taille.",
+      "Do changer de ton par section entière avec `data-tone` et laisser les rôles (`--fg`, `--fg-muted`, `--rule`, `--accent-text`) suivre.",
+      "Do ouvrir une liste par un filet vert profond plein et séparer ses lignes par un filet à 14 % ; aucune carte autour.",
+      "Do faire précéder chaque étiquette de statut par l'anneau, avec 0,6 em d'écart.",
+      "Do composer prix, références, dates, numéros et score en chiffres tabulaires.",
+      "Do animer en 180 / 420 / 800 ms avec `cubic-bezier(0.22, 1, 0.36, 1)` et, en GSAP, `power3.out` ou `power4.out` sur 1 à 1,6 s ; couper toute animation en `prefers-reduced-motion`.",
+      "Do faire changer les écrans dans un téléphone par rangées posées en pas (`steps(1)`), jamais par glissement.",
+      "Do montrer l'application en HTML/CSS dans le cadre de téléphone, jamais en image aplatie."
+    ],
+    "donts": [
+      "Don't poser une ombre portée sur une surface du site : les ombres n'existent que sur le téléphone et dans son écran, et sont teintées en vert profond.",
+      "Don't utiliser le vert LOCAGAB en aplat de section ni sur du texte courant.",
+      "Don't employer l'étiquette en capitales espacées comme eyebrow au-dessus d'un H2 de section ; elle nomme un état ou une métadonnée.",
+      "Don't introduire une barre de recherche ni une grille de biens dans le site : l'application montre la recherche, le site montre l'application.",
+      "Don't ajouter de dégradé hors du corps du téléphone et du voile photo de l'écran de fiche, ni de rebond dans les easings.",
+      "Don't changer de famille typographique ; Manrope seule, la hiérarchie vient de la graisse, de la taille et du serrage.",
+      "Don't renseigner un bouton de store comme lien tant que son adresse est vide ; la variante « Bientôt » reste un contour."
+    ]
+  }
+}

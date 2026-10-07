@@ -1,0 +1,71 @@
+.download {
+  padding-bottom: 0;
+  overflow: clip;
+}
+
+/* tout est posé sur un seul axe : titre, actions, appareil */
+.download__inner {
+  display: grid;
+  justify-items: center;
+  gap: 1.75rem;
+  text-align: center;
+}
+
+.download__inner h2 {
+  max-width: 17ch;
+}
+
+.download__inner .lead {
+  margin-bottom: 0.5rem;
+}
+
+.download__device {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  height: 23rem;
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+}
+
+.download__device .phone {
+  --z: 0.94;
+  box-shadow:
+    inset 0 0 0 1px rgb(255 255 255 / 0.2),
+    inset 0 0 0 3px #0a0e0d,
+    0 -30px 80px -30px rgb(0 0 0 / 0.5);
+}
+
+/* les anneaux du repère s'ouvrent derrière l'appareil */
+.download__rings {
+  position: absolute;
+  left: 50%;
+  top: 6rem;
+  width: min(140vw, 62rem);
+  aspect-ratio: 1;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  translate: -50% 0;
+}
+
+.download__rings::before,
+.download__rings::after {
+  content: "";
+  position: absolute;
+  inset: 14%;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+}
+
+.download__rings::after {
+  inset: 28%;
+}
+
+@media (min-width: 960px) {
+  .download__device {
+    height: 27rem;
+  }
+
+  .download__device .phone {
+    --z: 1.06;
+  }
+}

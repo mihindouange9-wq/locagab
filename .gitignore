@@ -1,0 +1,9 @@
+node_modules
+dist
+.impeccable/review/
+tools/.tmp-brand.html
+tools/shots/
+*.log
+.DS_Store
+desktop.ini
+Thumbs.db

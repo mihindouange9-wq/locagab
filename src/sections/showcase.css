@@ -1,0 +1,67 @@
+.showcase {
+  overflow: clip;
+}
+
+.showcase__head {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+/* Mobile : rangée à faire glisser du doigt, aimantée sur chaque appareil */
+.showcase__track {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.5rem var(--gutter) 2.5rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--gutter);
+  scrollbar-width: none;
+}
+
+.showcase__track::-webkit-scrollbar {
+  display: none;
+}
+
+.showcase__item {
+  display: grid;
+  flex: none;
+  justify-items: center;
+  gap: 1.5rem;
+  scroll-snap-align: center;
+}
+
+.showcase__item .phone {
+  --z: 0.86;
+}
+
+.showcase__item .label {
+  color: var(--forest);
+}
+
+@media (min-width: 960px) {
+  .showcase__head {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: end;
+    gap: 4rem;
+  }
+
+  .showcase__track {
+    gap: clamp(2rem, 3.5vw, 3.5rem);
+    padding-inline: max(var(--gutter), calc((100vw - var(--max)) / 2));
+    padding-bottom: 5rem;
+    scroll-snap-type: none;
+  }
+
+  /* un appareil sur deux est posé plus bas : la rangée respire */
+  .showcase__item:nth-child(even) {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 960px) and (hover: hover) {
+  .showcase__track {
+    overflow: visible;
+  }
+}

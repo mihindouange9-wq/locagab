@@ -1,0 +1,163 @@
+.trust__grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.trust__copy {
+  display: grid;
+  align-content: start;
+  gap: 1.75rem;
+}
+
+.trust__copy h2 {
+  max-width: 13ch;
+}
+
+/* Le Trust Score : cinq vérifications, cinq segments. Ni cadran ni échelle de couleurs. */
+.score {
+  display: grid;
+  gap: 1.75rem;
+  padding: clamp(1.5rem, 1rem + 2.5vw, 2.75rem);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  background: var(--forest-soft);
+}
+
+.score__name {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  color: var(--ivory);
+}
+
+/* la référence et la date : le tampon du dossier */
+.score__ref {
+  margin-left: auto;
+  color: var(--fg-muted);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.score__value {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.25rem;
+  color: var(--ivory);
+}
+
+.score__number {
+  font-size: clamp(4.5rem, 3rem + 7vw, 6.25rem);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.score__number small {
+  margin-left: 0.08em;
+  font-size: 0.45em;
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+.score__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--green-light);
+  font-size: var(--fs-h3);
+  font-weight: 680;
+  letter-spacing: -0.02em;
+}
+
+.score__status::before {
+  content: "";
+  width: 1.5rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.score__bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+.score__bar i {
+  height: 6px;
+  border-radius: 6px;
+  background: var(--green);
+  transform-origin: left center;
+}
+
+/* la piste reste visible derrière chaque segment */
+.score__bar {
+  position: relative;
+}
+
+.score__bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--rule) 0 calc((100% - 24px) / 5),
+    transparent calc((100% - 24px) / 5) calc((100% - 24px) / 5 + 6px)
+  );
+}
+
+.score__bar i {
+  position: relative;
+}
+
+.score__list {
+  display: grid;
+}
+
+.score__check {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding-block: 0.95rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ivory);
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.score__seal {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: inset 0 0 0 1.5px var(--green);
+}
+
+.score__seal svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.score__seal path {
+  fill: none;
+  stroke: var(--on-green);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+}
+
+@media (min-width: 900px) {
+  .trust__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(3rem, 7vw, 7rem);
+  }
+}
