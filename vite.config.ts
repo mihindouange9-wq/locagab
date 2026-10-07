@@ -93,7 +93,11 @@ function seo(): Plugin {
   };
 }
 
+/** Chemin de base : "/" sur un domaine dédié (Render), "/locagab/" sur GitHub Pages. */
+const BASE_PATH = process.env.BASE_PATH || "/";
+
 export default defineConfig({
+  base: BASE_PATH,
   plugins: [react(), seo()],
   build: { target: "es2022", cssMinify: "esbuild" },
 });

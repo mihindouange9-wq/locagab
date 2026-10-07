@@ -80,7 +80,7 @@ export default function Footer() {
           <span className="label">En partenariat avec</span>
           <img
             className="footer__partner-logo"
-            src="/partenaires/methode-aura.png"
+            src={`${import.meta.env.BASE_URL}partenaires/methode-aura.png`}
             alt="MÉTHODE AURA"
             width="800"
             height="246"
