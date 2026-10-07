@@ -16,8 +16,7 @@ npm run preview    # sert dist/ sur http://127.0.0.1:5181
 
 ## Mise en ligne
 
-Site publié sur GitHub Pages : https://mihindouange9-wq.github.io/locagab/ (`npm run deploy:pages` après chaque
-changement). Le site est prévu pour Render (site statique) : `render.yaml` décrit le build, le dossier publié, la réécriture
+Site en ligne : **https://locagab.onrender.com** (Render redéploie à chaque push sur `main`). Le site est prévu pour Render (site statique) : `render.yaml` décrit le build, le dossier publié, la réécriture
 d'adresses, les en-têtes de cache et de sécurité et la variable `SITE_URL` (adresse publique utilisée par la balise
 canonical, Open Graph, `robots.txt`, `sitemap.xml` et les données structurées). La marche à suivre complète est dans
 `DEPLOIEMENT.md`.

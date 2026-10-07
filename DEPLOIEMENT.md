@@ -1,21 +1,14 @@
 # Mise en ligne
 
-## Adresse actuelle : GitHub Pages
+## Adresse en ligne
 
-Le site est publié sur **https://mihindouange9-wq.github.io/locagab/** depuis la branche `gh-pages` du dépôt
-(réglages Pages : source `gh-pages`, racine). Pour publier une nouvelle version après un commit sur `main` :
+**https://locagab.onrender.com** : service Render `locagab` (site statique, Blueprint `render.yaml`), mis en ligne le
+7 octobre 2026. Chaque push sur `main` redéploie automatiquement en deux à trois minutes.
 
-```bash
-npm run deploy:pages
-```
+Solution de repli possible : GitHub Pages (`npm run deploy:pages`, outil `tools/deploy-pages.mjs`, modèle de workflow
+`tools/pages-workflow.yml`). Non utilisée, pour ne pas publier deux copies du site.
 
-L'outil construit le site avec le chemin de base `/locagab/` et l'adresse Pages, copie `dist/` dans l'arbre de travail
-`.gh-pages/` (hors dépôt principal) et pousse la branche. Pages se met à jour en moins d'une minute.
-Pour automatiser à chaque push : copier `tools/pages-workflow.yml` dans `.github/workflows/pages.yml` après avoir
-accordé la portée `workflow` au jeton (`gh auth refresh -s workflow`), puis passer les réglages Pages sur
-« GitHub Actions ». Pages ne permet pas d'en-têtes personnalisés (CSP, cache) : ils sont réservés à Render.
-
-# Render (domaine définitif)
+# Render
 
 Le site est un site statique : Render exécute `npm ci && npm run build` puis sert le dossier `dist/` depuis son CDN.
 Tout est décrit dans `render.yaml` (Blueprint) : build, dossier publié, réécriture d'adresses, en-têtes de cache et de
