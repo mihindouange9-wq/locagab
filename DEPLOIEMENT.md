@@ -6,22 +6,13 @@ sécurité, variables d'environnement.
 
 ## 1. Dépôt Git
 
-Le dépôt local est initialisé avec un premier commit. Publier sur GitHub (compte `mihindouange9-wq`) :
-
-```bash
-gh repo create locagab --private --source=. --remote=origin --push
-```
-
-Ou, si le dépôt distant existe déjà :
-
-```bash
-git remote add origin https://github.com/mihindouange9-wq/locagab.git
-git push -u origin main
-```
+Dépôt public : https://github.com/mihindouange9-wq/locagab (branche `main`). Le dépôt local y est rattaché (`origin`) :
+modifier, commiter, `git push`.
 
 ## 2. Service Render
 
-1. Tableau de bord Render → **New** → **Blueprint** → choisir le dépôt `locagab`.
+1. Ouvrir https://render.com/deploy?repo=https://github.com/mihindouange9-wq/locagab (ou tableau de bord Render →
+   **New** → **Blueprint** → dépôt `locagab`).
 2. Render lit `render.yaml` et propose le service `locagab` (site statique, plan gratuit). Valider.
 3. Premier déploiement : deux à trois minutes. Le site répond sur `https://locagab.onrender.com`
    (le nom peut varier si `locagab` est déjà pris : adapter `SITE_URL`, voir ci-dessous).
