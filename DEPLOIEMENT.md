@@ -5,9 +5,6 @@
 **https://locagab.onrender.com** : service Render `locagab` (site statique, Blueprint `render.yaml`), mis en ligne le
 7 octobre 2026. Chaque push sur `main` redéploie automatiquement en deux à trois minutes.
 
-Solution de repli possible : GitHub Pages (`npm run deploy:pages`, outil `tools/deploy-pages.mjs`, modèle de workflow
-`tools/pages-workflow.yml`). Non utilisée, pour ne pas publier deux copies du site.
-
 # Render
 
 Le site est un site statique : Render exécute `npm ci && npm run build` puis sert le dossier `dist/` depuis son CDN.

@@ -44,6 +44,11 @@ Le reste du contenu (navigation, problèmes, fonctionnalités, étapes, FAQ, pri
 les données de démonstration des écrans (annonces, prix, propriétaire) sont dans `src/content/demo.ts` et sont
 signalées comme fictives dans le pied de page.
 
+## Livrables
+
+Le dossier `livrables/` (hors Git) rassemble ce qui se remet au client : `LOCAGAB-charte.pdf`, `LOCAGAB-film-30s.mp4`
+et son affiche. Il se régénère avec `npm run charte` et `npm run video`.
+
 ## Charte graphique
 
 La charte graphique (27 planches 1600 × 1000, PDF) est générée depuis `charte/` et publiée avec le site à
@@ -94,8 +99,6 @@ tools/
   make-ico.mjs             produit public/favicon.ico à partir des icônes PNG
   charte-verifier.mjs      contrôle et capture chaque planche de la charte
   charte-pdf.mjs           export PDF de la charte
-  deploy-pages.mjs         construit et pousse le site sur la branche gh-pages (GitHub Pages)
-  pages-workflow.yml       modèle de workflow GitHub Actions pour publier à chaque push
 PRODUCT.md                 vérité produit issue du brief
 DESIGN.md                  système visuel documenté depuis le build
 CREDITS.md                 crédits photographiques et licences

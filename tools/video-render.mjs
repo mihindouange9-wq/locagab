@@ -110,9 +110,9 @@ const audio = await enc.evaluer("window.audio"), crete = await enc.evaluer("wind
 const morceaux = [];
 for (let d = 0; d < taille; d += 8_000_000) morceaux.push(Buffer.from(await enc.evaluer(`window.tranche(${d}, ${Math.min(taille, d + 8_000_000)})`, 120000), "base64"));
 enc.fermer();
-const sortie = join(VIDEO, "LOCAGAB-30s.mp4");
+const sortie = join(RACINE, "livrables", "LOCAGAB-film-30s.mp4"); await mkdir(join(RACINE, "livrables"), { recursive: true });
 await writeFile(sortie, Buffer.concat(morceaux));
-await writeFile(join(VIDEO, "LOCAGAB-30s-affiche.jpg"), affiche);
+await writeFile(join(RACINE, "livrables", "LOCAGAB-film-30s-affiche.jpg"), affiche);
 serveur.close();
 await attendre(600); await rm(DOSSIER, { recursive: true, force: true }).catch(() => {});
 const { size } = await stat(sortie);

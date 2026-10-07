@@ -7,7 +7,7 @@ import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { setTimeout as attendre } from "node:timers/promises";
 
-const FICHIER = process.argv[2] ? join(process.cwd(), process.argv[2]) : join(process.cwd(), "video", "LOCAGAB-30s.mp4");
+const FICHIER = process.argv[2] ? join(process.cwd(), process.argv[2]) : join(process.cwd(), "livrables", "LOCAGAB-film-30s.mp4");
 const CHROME = "C:/Program Files/Google/Chrome/Application/chrome.exe";
 const serveur = http.createServer(async (q, r) => {
   const p = q.url.split("?")[0];
@@ -44,7 +44,7 @@ const info = await evaluer(`(async () => {
   });
   return { duree: v.duration, vus, planche: c.toDataURL('image/jpeg', 0.85).split(',')[1] };
 })()`);
-await writeFile(join(process.cwd(), "video", "LOCAGAB-30s-lecture.jpg"), Buffer.from(info.planche, "base64"));
+await writeFile(join(process.cwd(), "livrables", "controle-lecture.jpg"), Buffer.from(info.planche, "base64"));
 console.log(`durée ${info.duree.toFixed(2)} s · instants présentés : ${info.vus.join(", ")}`);
 try { ws.close(); } catch { /* fermé */ }
 chrome.kill(); serveur.close();
