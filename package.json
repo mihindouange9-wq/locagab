@@ -13,7 +13,11 @@
     "charte:build": "node charte/build.mjs",
     "charte:check": "node tools/charte-verifier.mjs",
     "charte:pdf": "node tools/charte-pdf.mjs",
-    "charte": "npm run charte:build && npm run charte:check && npm run charte:pdf"
+    "charte": "npm run charte:build && npm run charte:check && npm run charte:pdf",
+    "video:scene": "node video/build-scene.mjs",
+    "video:apercu": "node video/build-scene.mjs && node tools/video-render.mjs --apercu",
+    "video": "node video/build-scene.mjs && node tools/video-render.mjs",
+    "video:check": "node tools/video-check.mjs"
   },
   "dependencies": {
     "@fontsource-variable/manrope": "^5.2.5",

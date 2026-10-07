@@ -53,6 +53,14 @@ depuis le tracé officiel, repère, planche, lockup MÉTHODE AURA), `charte/styl
 les trois étapes séparément (`charte:build`, `charte:check`, `charte:pdf`). Le partenariat MÉTHODE AURA figure en pied
 de chaque planche.
 
+## Film de 30 secondes
+
+Un film de présentation (1920 × 1080, 30 i/s, H.264 + AAC) est produit depuis `video/` : `build-scene.mjs` génère une
+scène HTML animée par une ligne de temps GSAP déterministe, `tools/video-render.mjs` capture les 900 images dans Chrome
+et les encode par WebCodecs (`video/encodeur.html`, muxeur MP4), avec une bande-son générée. Commandes : `npm run
+video:apercu` (planche-contact des images clés), `npm run video` (rendu complet), `npm run video:check` (contrôle du
+fichier). Sorties ignorées par Git : `video/LOCAGAB-30s.mp4`, affiche et planches.
+
 ## Organisation
 
 ```
