@@ -1198,8 +1198,10 @@
   letter-spacing: 0.02em;
 }
 
+/* mêmes sélecteurs que la règle d'entrée, sinon elle l'emporte et une rangée reste masquée */
 @media (prefers-reduced-motion: reduce) {
-  .phone__layer.is-active .app-body > * {
+  .phone__layer + .phone__layer.is-active .app-body > *,
+  .phone__layer:has(+ .phone__layer).is-active .app-body > * {
     animation: none;
   }
 }

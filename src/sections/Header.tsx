@@ -52,6 +52,15 @@ export default function Header() {
     };
   }, [open]);
 
+  // Passage en grand écran (rotation, fenêtre élargie) : le menu mobile disparaît, on le referme
+  // pour ne pas laisser la page figée derrière lui.
+  useEffect(() => {
+    const wide = window.matchMedia("(min-width: 1100px)");
+    const close = () => wide.matches && setOpen(false);
+    wide.addEventListener("change", close);
+    return () => wide.removeEventListener("change", close);
+  }, []);
+
   return (
     <header className={`header ${solid || open ? "is-solid" : ""} ${open ? "is-open" : ""}`}>
       <div className="container header__bar">

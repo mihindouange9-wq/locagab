@@ -132,6 +132,31 @@
   text-decoration: none;
 }
 
+/* Petits téléphones : logo et bouton se resserrent pour que le menu reste dans l'écran */
+@media (max-width: 374px) {
+  .header__bar {
+    gap: 0.5rem;
+  }
+
+  .header__logo svg {
+    height: 1.875rem;
+  }
+
+  .header__cta {
+    padding-inline: 0.9rem;
+  }
+}
+
+@media (max-width: 339px) {
+  .header__logo svg {
+    height: 1.625rem;
+  }
+
+  .header__cta {
+    padding-inline: 0.75rem;
+  }
+}
+
 @media (min-width: 480px) {
   .header__cta-more {
     display: inline;
